@@ -106,7 +106,6 @@ public class TestBase {
                 return true;
         }
         return false;
-
     }
 
     public void deleteContact() {
