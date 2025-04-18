@@ -1,24 +1,23 @@
 package com.phonebook.tests;
 
-import org.openqa.selenium.By;
+import com.phonebook.models.User;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class LoginTests extends TestBase {
     @Test
     public void loginPositiveTest() {
-
-        clickOnLoginLink();
-        fillRegisterLoginForm("joe1@test.com", "Aa12345$");
-        clickOnLoginButton();
-        Assert.assertTrue(isSignOutButtonIsPresent());
+        app.getUser().clickOnLoginLink();
+        app.getUser().fillRegisterLoginForm(new User().setEmail("joe@test.com").setPassword("Qwea12345$"));
+        app.getUser().clickOnLoginButton();
+        Assert.assertTrue(app.getUser().isSignOutButtonPresent());
     }
 
     @Test
     public void loginNegativeWithoutEmailTest(){
-        clickOnLoginLink();
-        fillRegisterLoginForm(new User().setPassword("Nnoa12345$"));
-        clickOnLoginButton();
-        Assert.assertTrue(isAlertDisplayed());
+        app.getUser().clickOnLoginLink();
+        app.getUser().fillRegisterLoginForm(new User().setPassword("Nnoa12345$"));
+        app.getUser().clickOnLoginButton();
+        Assert.assertTrue(app.getUser().isAlertDisplayed());
     }
 }
