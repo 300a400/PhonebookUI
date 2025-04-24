@@ -1,5 +1,6 @@
 package com.phonebook.tests;
 
+import com.phonebook.data.UserData;
 import com.phonebook.models.User;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -20,7 +21,8 @@ public class CreateAccountTests extends TestBase{
     public void newUserRegistrationPositiveTest(){
         //int i=(int)((System.currentTimeMillis()/1000)%3600);
         app.getUser().clickOnLoginLink();
-        app.getUser().fillRegisterLoginForm(new User().setEmail("joe@test.com").setPassword("Qwea12345$"));
+        app.getUser().fillRegisterLoginForm(new User()
+                .setEmail(UserData.EMAIL).setPassword(UserData.PASSWORD));
         app.getUser().clickOnRegistrationButton();
         Assert.assertTrue(app.getUser().isSignOutButtonPresent());
     }
@@ -28,7 +30,8 @@ public class CreateAccountTests extends TestBase{
     @Test
     public void existedUserRegistrationNegativeTest(){
         app.getUser().clickOnLoginLink();
-        app.getUser().fillRegisterLoginForm(new User().setEmail("joe@test.com").setPassword("Qwea12345$"));
+        app.getUser().fillRegisterLoginForm(new User()
+                .setEmail(UserData.EMAIL).setPassword(UserData.PASSWORD));
         app.getUser().clickOnRegistrationButton();
         softAssert.assertTrue(app.getUser().isAlertDisplayed());
         softAssert.assertTrue(app.getUser().isErrorMessagePresent());
