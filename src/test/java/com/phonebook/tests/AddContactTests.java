@@ -4,12 +4,14 @@ import com.phonebook.data.ContactData;
 import com.phonebook.data.UserData;
 import com.phonebook.models.Contact;
 import com.phonebook.models.User;
+import com.phonebook.utils.DataProviders;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -42,16 +44,9 @@ public class AddContactTests extends TestBase{
         Assert.assertTrue(app.getContact().isContactAdded(ContactData.FIRST_NAME));
     }
 
-    @DataProvider
-    public Iterator<Object[]>addNewContact(){
-        List<Object[]> list = new ArrayList<>();
-        list.add(new Object[]{"Oliver", "Twist", "01234567890", "Ntwist@gm.com", "Rishon", "QA"});
-        list.add(new Object[]{"Oliver", "Twist", "012345678901", "twist@gm.com", "Rishon", "QA"});
-        list.add(new Object[]{"Oliver", "Twist", "01234567890123", "Kwist@gm.com", "Rishon", "QA"});
-        return list.iterator();
-    }
 
-    @Test(dataProvider = "addNewContact")
+
+    @Test(dataProvider = "addNewContact", dataProviderClass = DataProviders.class)
     public void addContactPositiveFromDataProviderTest(String name, String lastName, String phone, String email, String address, String description) {
         app.getContact().clickOnAddLink();
         app.getContact().fillContactForm(new Contact()
@@ -63,6 +58,15 @@ public class AddContactTests extends TestBase{
                 .setDescription(ContactData.DESCRIPTION));
         app.getContact().clickOnSaveButton();
         Assert.assertTrue(app.getContact().isContactAdded(name));
+    }
+
+
+    @Test(dataProvider = "addNewContactWithCsv", dataProviderClass = DataProviders.class)
+    public void addContactPositiveFromDataProviderWithCsvFileTest(Contact contact) {
+        app.getContact().clickOnAddLink();
+        app.getContact().fillContactForm(contact);
+        app.getContact().clickOnSaveButton();
+        Assert.assertTrue(app.getContact().isContactAdded(contact.getName()));
     }
 
     @AfterMethod
