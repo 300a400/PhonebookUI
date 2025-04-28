@@ -32,8 +32,8 @@ public class BaseHelper {
         driver.findElement(locator).click();
     }
 
-    public boolean isAlertDisplayed() {
-        Alert alert = new WebDriverWait(driver, Duration.ofSeconds(20))
+        public boolean isAlertDisplayed() {
+        Alert alert = new WebDriverWait(driver, Duration.ofSeconds(30))
                 .until(ExpectedConditions.alertIsPresent());
         if (alert == null) {
             return false;
@@ -43,7 +43,24 @@ public class BaseHelper {
             return true;
         }
 
-    }
+     }
+//    public boolean isAlertDisplayed() {
+//        try {
+//            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+//            wait.until(ExpectedConditions.alertIsPresent());
+//            if (isAlertDisplayed()) {
+//                driver.switchTo().alert().accept();
+//            } else {
+//                System.out.println("Alert was not present, proceeding without it");
+//            }
+//            return true;
+//        } catch (TimeoutException e) {
+//
+//            return false;
+//        }
+//    }
+
+
 
     public void pause(int millis) {
         try {
