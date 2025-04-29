@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.phonebook.tests.LoginTests" tests="1" skipped="0" failures="1" errors="0" timestamp="2025-04-28T09:37:17.961Z" hostname="mypc" time="20.905">
+  <properties/>
+  <testcase name="loginNegativeWithoutEmailTest" classname="com.phonebook.tests.LoginTests" time="20.905">
+    <failure message="org.openqa.selenium.TimeoutException: Expected condition failed: waiting for alert to be present (tried for 20 second(s) with 500 milliseconds interval)&#10;Build info: version: '4.30.0', revision: '509c7f17cc*'&#10;System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-24-generic', java.version: '17.0.14'&#10;Driver info: net.bytebuddy.renamed.java.lang.Object$ByteBuddy$zE2STZjB&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.95, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:40425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:40425/devtoo..., se:cdpVersion: 135.0.7049.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 9ea543374a7a983ed219470bc3d69111" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for alert to be present (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.30.0', revision: '509c7f17cc*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-24-generic', java.version: '17.0.14'
+Driver info: net.bytebuddy.renamed.java.lang.Object$ByteBuddy$zE2STZjB
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.95, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:40425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:40425/devtoo..., se:cdpVersion: 135.0.7049.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ea543374a7a983ed219470bc3d69111
+	at app//org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at app//org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at app//com.phonebook.fw.BaseHelper.isAlertDisplayed(BaseHelper.java:37)
+	at app//com.phonebook.tests.LoginTests.loginNegativeWithoutEmailTest(LoginTests.java:32)
+	at java.base@17.0.14/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@17.0.14/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base@17.0.14/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@17.0.14/java.lang.reflect.Method.invoke(Method.java:569)
+	at app//org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at app//org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at app//org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at app//org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at app//org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at app//org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at app//org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at app//org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base@17.0.14/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at app//org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at app//org.testng.TestRunner.run(TestRunner.java:616)
+	at app//org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at app//org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at app//org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at app//org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at app//org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at app//org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at app//org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at app//org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at app//org.testng.TestNG.runSuites(TestNG.java:1112)
+	at app//org.testng.TestNG.run(TestNG.java:1079)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:153)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:63)
+	at java.base@17.0.14/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@17.0.14/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base@17.0.14/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@17.0.14/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
+	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:200)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:121)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</failure>
+  </testcase>
+  <system-out><![CDATA[11:37:17.928 [Test worker] INFO  com.phonebook.tests.TestBase -- Start test loginNegativeWithoutEmailTest[]
+11:37:17.933 [Test worker] INFO  com.phonebook.utils.MyListener -- Before find elementsBy.cssSelector: [href='/login']
+11:37:17.934 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:17.959 [Test worker] INFO  com.phonebook.utils.MyListener -- List size1
+11:37:17.960 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:17.962 [Test worker] INFO  com.phonebook.utils.MyListener -- The locator will findBy.cssSelector: [href='/login']
+11:37:17.963 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:17.991 [Test worker] INFO  com.phonebook.utils.MyListener -- The locator isBy.cssSelector: [href='/login']
+11:37:17.993 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:18.147 [Test worker] INFO  com.phonebook.utils.MyListener -- The locator will findBy.name: password
+11:37:18.148 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:18.182 [Test worker] INFO  com.phonebook.utils.MyListener -- The locator isBy.name: password
+11:37:18.183 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:18.336 [Test worker] INFO  com.phonebook.utils.MyListener -- The locator will findBy.name: password
+11:37:18.337 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:18.365 [Test worker] INFO  com.phonebook.utils.MyListener -- The locator isBy.name: password
+11:37:18.366 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:18.422 [Test worker] INFO  com.phonebook.utils.MyListener -- The locator will findBy.name: password
+11:37:18.423 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:18.439 [Test worker] INFO  com.phonebook.utils.MyListener -- The locator isBy.name: password
+11:37:18.440 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:18.526 [Test worker] INFO  com.phonebook.utils.MyListener -- The locator will findBy.name: login
+11:37:18.527 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:18.579 [Test worker] INFO  com.phonebook.utils.MyListener -- The locator isBy.name: login
+11:37:18.580 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:18.727 [Test worker] INFO  com.phonebook.utils.MyListener -- Test has a problem
+11:37:18.728 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:18.728 [Test worker] INFO  com.phonebook.utils.MyListener -- Method ->alert
+11:37:18.728 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:18.728 [Test worker] INFO  com.phonebook.utils.MyListener -- TargetException ->org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=135.0.7049.95)
+Build info: version: '4.30.0', revision: '509c7f17cc*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-24-generic', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9ea543374a7a983ed219470bc3d69111, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.95, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:40425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:40425/devtoo..., se:cdpVersion: 135.0.7049.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ea543374a7a983ed219470bc3d69111
+11:37:18.729 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:18.729 [Test worker] INFO  com.phonebook.utils.MyListener -- Object target ->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@36417a54
+11:37:18.729 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:19.246 [Test worker] INFO  com.phonebook.utils.MyListener -- Test has a problem
+11:37:19.246 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:19.246 [Test worker] INFO  com.phonebook.utils.MyListener -- Method ->alert
+11:37:19.247 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:19.247 [Test worker] INFO  com.phonebook.utils.MyListener -- TargetException ->org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=135.0.7049.95)
+Build info: version: '4.30.0', revision: '509c7f17cc*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-24-generic', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9ea543374a7a983ed219470bc3d69111, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.95, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:40425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:40425/devtoo..., se:cdpVersion: 135.0.7049.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ea543374a7a983ed219470bc3d69111
+11:37:19.248 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:19.248 [Test worker] INFO  com.phonebook.utils.MyListener -- Object target ->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@2b8bb184
+11:37:19.248 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:19.765 [Test worker] INFO  com.phonebook.utils.MyListener -- Test has a problem
+11:37:19.766 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:19.767 [Test worker] INFO  com.phonebook.utils.MyListener -- Method ->alert
+11:37:19.767 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:19.768 [Test worker] INFO  com.phonebook.utils.MyListener -- TargetException ->org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=135.0.7049.95)
+Build info: version: '4.30.0', revision: '509c7f17cc*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-24-generic', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9ea543374a7a983ed219470bc3d69111, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.95, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:40425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:40425/devtoo..., se:cdpVersion: 135.0.7049.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ea543374a7a983ed219470bc3d69111
+11:37:19.769 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:19.769 [Test worker] INFO  com.phonebook.utils.MyListener -- Object target ->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@472a11ae
+11:37:19.769 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:20.285 [Test worker] INFO  com.phonebook.utils.MyListener -- Test has a problem
+11:37:20.285 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:20.286 [Test worker] INFO  com.phonebook.utils.MyListener -- Method ->alert
+11:37:20.286 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:20.286 [Test worker] INFO  com.phonebook.utils.MyListener -- TargetException ->org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=135.0.7049.95)
+Build info: version: '4.30.0', revision: '509c7f17cc*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-24-generic', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9ea543374a7a983ed219470bc3d69111, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.95, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:40425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:40425/devtoo..., se:cdpVersion: 135.0.7049.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ea543374a7a983ed219470bc3d69111
+11:37:20.287 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:20.287 [Test worker] INFO  com.phonebook.utils.MyListener -- Object target ->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@dc79225
+11:37:20.287 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:20.802 [Test worker] INFO  com.phonebook.utils.MyListener -- Test has a problem
+11:37:20.802 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:20.802 [Test worker] INFO  com.phonebook.utils.MyListener -- Method ->alert
+11:37:20.803 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:20.803 [Test worker] INFO  com.phonebook.utils.MyListener -- TargetException ->org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=135.0.7049.95)
+Build info: version: '4.30.0', revision: '509c7f17cc*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-24-generic', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9ea543374a7a983ed219470bc3d69111, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.95, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:40425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:40425/devtoo..., se:cdpVersion: 135.0.7049.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ea543374a7a983ed219470bc3d69111
+11:37:20.803 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:20.803 [Test worker] INFO  com.phonebook.utils.MyListener -- Object target ->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@30e9ca13
+11:37:20.803 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:21.318 [Test worker] INFO  com.phonebook.utils.MyListener -- Test has a problem
+11:37:21.318 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:21.318 [Test worker] INFO  com.phonebook.utils.MyListener -- Method ->alert
+11:37:21.319 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:21.319 [Test worker] INFO  com.phonebook.utils.MyListener -- TargetException ->org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=135.0.7049.95)
+Build info: version: '4.30.0', revision: '509c7f17cc*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-24-generic', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9ea543374a7a983ed219470bc3d69111, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.95, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:40425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:40425/devtoo..., se:cdpVersion: 135.0.7049.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ea543374a7a983ed219470bc3d69111
+11:37:21.319 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:21.319 [Test worker] INFO  com.phonebook.utils.MyListener -- Object target ->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@46185a1b
+11:37:21.319 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:21.834 [Test worker] INFO  com.phonebook.utils.MyListener -- Test has a problem
+11:37:21.835 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:21.835 [Test worker] INFO  com.phonebook.utils.MyListener -- Method ->alert
+11:37:21.835 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:21.836 [Test worker] INFO  com.phonebook.utils.MyListener -- TargetException ->org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=135.0.7049.95)
+Build info: version: '4.30.0', revision: '509c7f17cc*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-24-generic', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9ea543374a7a983ed219470bc3d69111, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.95, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:40425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:40425/devtoo..., se:cdpVersion: 135.0.7049.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ea543374a7a983ed219470bc3d69111
+11:37:21.836 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:21.837 [Test worker] INFO  com.phonebook.utils.MyListener -- Object target ->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@51288417
+11:37:21.837 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:22.356 [Test worker] INFO  com.phonebook.utils.MyListener -- Test has a problem
+11:37:22.356 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:22.357 [Test worker] INFO  com.phonebook.utils.MyListener -- Method ->alert
+11:37:22.357 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:22.357 [Test worker] INFO  com.phonebook.utils.MyListener -- TargetException ->org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=135.0.7049.95)
+Build info: version: '4.30.0', revision: '509c7f17cc*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-24-generic', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9ea543374a7a983ed219470bc3d69111, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.95, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:40425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:40425/devtoo..., se:cdpVersion: 135.0.7049.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ea543374a7a983ed219470bc3d69111
+11:37:22.357 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:22.357 [Test worker] INFO  com.phonebook.utils.MyListener -- Object target ->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@60cf62ad
+11:37:22.357 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:22.874 [Test worker] INFO  com.phonebook.utils.MyListener -- Test has a problem
+11:37:22.875 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:22.875 [Test worker] INFO  com.phonebook.utils.MyListener -- Method ->alert
+11:37:22.875 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:22.875 [Test worker] INFO  com.phonebook.utils.MyListener -- TargetException ->org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=135.0.7049.95)
+Build info: version: '4.30.0', revision: '509c7f17cc*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-24-generic', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9ea543374a7a983ed219470bc3d69111, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.95, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:40425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:40425/devtoo..., se:cdpVersion: 135.0.7049.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ea543374a7a983ed219470bc3d69111
+11:37:22.875 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:22.875 [Test worker] INFO  com.phonebook.utils.MyListener -- Object target ->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@1e0895f5
+11:37:22.875 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:23.390 [Test worker] INFO  com.phonebook.utils.MyListener -- Test has a problem
+11:37:23.391 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:23.391 [Test worker] INFO  com.phonebook.utils.MyListener -- Method ->alert
+11:37:23.391 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:23.391 [Test worker] INFO  com.phonebook.utils.MyListener -- TargetException ->org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=135.0.7049.95)
+Build info: version: '4.30.0', revision: '509c7f17cc*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-24-generic', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9ea543374a7a983ed219470bc3d69111, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.95, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:40425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:40425/devtoo..., se:cdpVersion: 135.0.7049.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ea543374a7a983ed219470bc3d69111
+11:37:23.391 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:23.391 [Test worker] INFO  com.phonebook.utils.MyListener -- Object target ->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@1ac4ccad
+11:37:23.391 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:23.906 [Test worker] INFO  com.phonebook.utils.MyListener -- Test has a problem
+11:37:23.906 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:23.906 [Test worker] INFO  com.phonebook.utils.MyListener -- Method ->alert
+11:37:23.906 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:23.907 [Test worker] INFO  com.phonebook.utils.MyListener -- TargetException ->org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=135.0.7049.95)
+Build info: version: '4.30.0', revision: '509c7f17cc*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-24-generic', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9ea543374a7a983ed219470bc3d69111, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.95, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:40425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:40425/devtoo..., se:cdpVersion: 135.0.7049.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ea543374a7a983ed219470bc3d69111
+11:37:23.907 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:23.907 [Test worker] INFO  com.phonebook.utils.MyListener -- Object target ->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@fd9ebde
+11:37:23.907 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:24.423 [Test worker] INFO  com.phonebook.utils.MyListener -- Test has a problem
+11:37:24.424 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:24.424 [Test worker] INFO  com.phonebook.utils.MyListener -- Method ->alert
+11:37:24.424 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:24.424 [Test worker] INFO  com.phonebook.utils.MyListener -- TargetException ->org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=135.0.7049.95)
+Build info: version: '4.30.0', revision: '509c7f17cc*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-24-generic', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9ea543374a7a983ed219470bc3d69111, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.95, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:40425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:40425/devtoo..., se:cdpVersion: 135.0.7049.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ea543374a7a983ed219470bc3d69111
+11:37:24.425 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:24.425 [Test worker] INFO  com.phonebook.utils.MyListener -- Object target ->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@290d10ef
+11:37:24.425 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:24.939 [Test worker] INFO  com.phonebook.utils.MyListener -- Test has a problem
+11:37:24.939 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:24.940 [Test worker] INFO  com.phonebook.utils.MyListener -- Method ->alert
+11:37:24.940 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:24.940 [Test worker] INFO  com.phonebook.utils.MyListener -- TargetException ->org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=135.0.7049.95)
+Build info: version: '4.30.0', revision: '509c7f17cc*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-24-generic', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9ea543374a7a983ed219470bc3d69111, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.95, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:40425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:40425/devtoo..., se:cdpVersion: 135.0.7049.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ea543374a7a983ed219470bc3d69111
+11:37:24.940 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:24.940 [Test worker] INFO  com.phonebook.utils.MyListener -- Object target ->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@1bc0d349
+11:37:24.940 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:25.454 [Test worker] INFO  com.phonebook.utils.MyListener -- Test has a problem
+11:37:25.454 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:25.455 [Test worker] INFO  com.phonebook.utils.MyListener -- Method ->alert
+11:37:25.455 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:25.455 [Test worker] INFO  com.phonebook.utils.MyListener -- TargetException ->org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=135.0.7049.95)
+Build info: version: '4.30.0', revision: '509c7f17cc*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-24-generic', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9ea543374a7a983ed219470bc3d69111, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.95, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:40425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:40425/devtoo..., se:cdpVersion: 135.0.7049.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ea543374a7a983ed219470bc3d69111
+11:37:25.455 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:25.455 [Test worker] INFO  com.phonebook.utils.MyListener -- Object target ->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@13d9261f
+11:37:25.455 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:25.971 [Test worker] INFO  com.phonebook.utils.MyListener -- Test has a problem
+11:37:25.972 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:25.972 [Test worker] INFO  com.phonebook.utils.MyListener -- Method ->alert
+11:37:25.972 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:25.972 [Test worker] INFO  com.phonebook.utils.MyListener -- TargetException ->org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=135.0.7049.95)
+Build info: version: '4.30.0', revision: '509c7f17cc*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-24-generic', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9ea543374a7a983ed219470bc3d69111, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.95, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:40425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:40425/devtoo..., se:cdpVersion: 135.0.7049.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ea543374a7a983ed219470bc3d69111
+11:37:25.972 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:25.972 [Test worker] INFO  com.phonebook.utils.MyListener -- Object target ->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@e9ef5b6
+11:37:25.972 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:26.486 [Test worker] INFO  com.phonebook.utils.MyListener -- Test has a problem
+11:37:26.487 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:26.487 [Test worker] INFO  com.phonebook.utils.MyListener -- Method ->alert
+11:37:26.487 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:26.487 [Test worker] INFO  com.phonebook.utils.MyListener -- TargetException ->org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=135.0.7049.95)
+Build info: version: '4.30.0', revision: '509c7f17cc*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-24-generic', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9ea543374a7a983ed219470bc3d69111, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.95, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:40425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:40425/devtoo..., se:cdpVersion: 135.0.7049.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ea543374a7a983ed219470bc3d69111
+11:37:26.487 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:26.487 [Test worker] INFO  com.phonebook.utils.MyListener -- Object target ->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@5300cac
+11:37:26.487 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:27.002 [Test worker] INFO  com.phonebook.utils.MyListener -- Test has a problem
+11:37:27.002 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:27.002 [Test worker] INFO  com.phonebook.utils.MyListener -- Method ->alert
+11:37:27.003 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:27.003 [Test worker] INFO  com.phonebook.utils.MyListener -- TargetException ->org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=135.0.7049.95)
+Build info: version: '4.30.0', revision: '509c7f17cc*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-24-generic', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9ea543374a7a983ed219470bc3d69111, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.95, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:40425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:40425/devtoo..., se:cdpVersion: 135.0.7049.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ea543374a7a983ed219470bc3d69111
+11:37:27.003 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:27.003 [Test worker] INFO  com.phonebook.utils.MyListener -- Object target ->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@4110765e
+11:37:27.003 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:27.518 [Test worker] INFO  com.phonebook.utils.MyListener -- Test has a problem
+11:37:27.518 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:27.518 [Test worker] INFO  com.phonebook.utils.MyListener -- Method ->alert
+11:37:27.518 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:27.519 [Test worker] INFO  com.phonebook.utils.MyListener -- TargetException ->org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=135.0.7049.95)
+Build info: version: '4.30.0', revision: '509c7f17cc*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-24-generic', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9ea543374a7a983ed219470bc3d69111, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.95, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:40425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:40425/devtoo..., se:cdpVersion: 135.0.7049.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ea543374a7a983ed219470bc3d69111
+11:37:27.519 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:27.519 [Test worker] INFO  com.phonebook.utils.MyListener -- Object target ->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@1ba359bd
+11:37:27.519 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:28.034 [Test worker] INFO  com.phonebook.utils.MyListener -- Test has a problem
+11:37:28.035 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:28.035 [Test worker] INFO  com.phonebook.utils.MyListener -- Method ->alert
+11:37:28.035 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:28.035 [Test worker] INFO  com.phonebook.utils.MyListener -- TargetException ->org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=135.0.7049.95)
+Build info: version: '4.30.0', revision: '509c7f17cc*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-24-generic', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9ea543374a7a983ed219470bc3d69111, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.95, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:40425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:40425/devtoo..., se:cdpVersion: 135.0.7049.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ea543374a7a983ed219470bc3d69111
+11:37:28.035 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:28.035 [Test worker] INFO  com.phonebook.utils.MyListener -- Object target ->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@62e93c3a
+11:37:28.035 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:28.552 [Test worker] INFO  com.phonebook.utils.MyListener -- Test has a problem
+11:37:28.553 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:28.553 [Test worker] INFO  com.phonebook.utils.MyListener -- Method ->alert
+11:37:28.553 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:28.553 [Test worker] INFO  com.phonebook.utils.MyListener -- TargetException ->org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=135.0.7049.95)
+Build info: version: '4.30.0', revision: '509c7f17cc*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-24-generic', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9ea543374a7a983ed219470bc3d69111, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.95, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:40425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:40425/devtoo..., se:cdpVersion: 135.0.7049.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ea543374a7a983ed219470bc3d69111
+11:37:28.554 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:28.554 [Test worker] INFO  com.phonebook.utils.MyListener -- Object target ->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@673919a7
+11:37:28.554 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:29.067 [Test worker] INFO  com.phonebook.utils.MyListener -- Test has a problem
+11:37:29.068 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:29.068 [Test worker] INFO  com.phonebook.utils.MyListener -- Method ->alert
+11:37:29.068 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:29.069 [Test worker] INFO  com.phonebook.utils.MyListener -- TargetException ->org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=135.0.7049.95)
+Build info: version: '4.30.0', revision: '509c7f17cc*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-24-generic', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9ea543374a7a983ed219470bc3d69111, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.95, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:40425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:40425/devtoo..., se:cdpVersion: 135.0.7049.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ea543374a7a983ed219470bc3d69111
+11:37:29.069 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:29.069 [Test worker] INFO  com.phonebook.utils.MyListener -- Object target ->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@25d93198
+11:37:29.070 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:29.585 [Test worker] INFO  com.phonebook.utils.MyListener -- Test has a problem
+11:37:29.586 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:29.586 [Test worker] INFO  com.phonebook.utils.MyListener -- Method ->alert
+11:37:29.587 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:29.587 [Test worker] INFO  com.phonebook.utils.MyListener -- TargetException ->org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=135.0.7049.95)
+Build info: version: '4.30.0', revision: '509c7f17cc*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-24-generic', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9ea543374a7a983ed219470bc3d69111, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.95, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:40425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:40425/devtoo..., se:cdpVersion: 135.0.7049.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ea543374a7a983ed219470bc3d69111
+11:37:29.587 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:29.588 [Test worker] INFO  com.phonebook.utils.MyListener -- Object target ->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@2436ea2f
+11:37:29.588 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:30.101 [Test worker] INFO  com.phonebook.utils.MyListener -- Test has a problem
+11:37:30.102 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:30.102 [Test worker] INFO  com.phonebook.utils.MyListener -- Method ->alert
+11:37:30.102 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:30.102 [Test worker] INFO  com.phonebook.utils.MyListener -- TargetException ->org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=135.0.7049.95)
+Build info: version: '4.30.0', revision: '509c7f17cc*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-24-generic', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9ea543374a7a983ed219470bc3d69111, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.95, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:40425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:40425/devtoo..., se:cdpVersion: 135.0.7049.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ea543374a7a983ed219470bc3d69111
+11:37:30.102 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:30.102 [Test worker] INFO  com.phonebook.utils.MyListener -- Object target ->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@f951a7f
+11:37:30.102 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:30.618 [Test worker] INFO  com.phonebook.utils.MyListener -- Test has a problem
+11:37:30.618 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:30.618 [Test worker] INFO  com.phonebook.utils.MyListener -- Method ->alert
+11:37:30.618 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:30.619 [Test worker] INFO  com.phonebook.utils.MyListener -- TargetException ->org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=135.0.7049.95)
+Build info: version: '4.30.0', revision: '509c7f17cc*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-24-generic', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9ea543374a7a983ed219470bc3d69111, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.95, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:40425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:40425/devtoo..., se:cdpVersion: 135.0.7049.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ea543374a7a983ed219470bc3d69111
+11:37:30.619 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:30.619 [Test worker] INFO  com.phonebook.utils.MyListener -- Object target ->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@20cece0b
+11:37:30.619 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:31.137 [Test worker] INFO  com.phonebook.utils.MyListener -- Test has a problem
+11:37:31.137 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:31.137 [Test worker] INFO  com.phonebook.utils.MyListener -- Method ->alert
+11:37:31.137 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:31.137 [Test worker] INFO  com.phonebook.utils.MyListener -- TargetException ->org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=135.0.7049.95)
+Build info: version: '4.30.0', revision: '509c7f17cc*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-24-generic', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9ea543374a7a983ed219470bc3d69111, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.95, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:40425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:40425/devtoo..., se:cdpVersion: 135.0.7049.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ea543374a7a983ed219470bc3d69111
+11:37:31.137 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:31.137 [Test worker] INFO  com.phonebook.utils.MyListener -- Object target ->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@4c777e7b
+11:37:31.137 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:31.651 [Test worker] INFO  com.phonebook.utils.MyListener -- Test has a problem
+11:37:31.652 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:31.652 [Test worker] INFO  com.phonebook.utils.MyListener -- Method ->alert
+11:37:31.652 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:31.652 [Test worker] INFO  com.phonebook.utils.MyListener -- TargetException ->org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=135.0.7049.95)
+Build info: version: '4.30.0', revision: '509c7f17cc*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-24-generic', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9ea543374a7a983ed219470bc3d69111, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.95, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:40425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:40425/devtoo..., se:cdpVersion: 135.0.7049.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ea543374a7a983ed219470bc3d69111
+11:37:31.652 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:31.653 [Test worker] INFO  com.phonebook.utils.MyListener -- Object target ->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@5f038248
+11:37:31.653 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:32.167 [Test worker] INFO  com.phonebook.utils.MyListener -- Test has a problem
+11:37:32.167 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:32.167 [Test worker] INFO  com.phonebook.utils.MyListener -- Method ->alert
+11:37:32.167 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:32.167 [Test worker] INFO  com.phonebook.utils.MyListener -- TargetException ->org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=135.0.7049.95)
+Build info: version: '4.30.0', revision: '509c7f17cc*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-24-generic', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9ea543374a7a983ed219470bc3d69111, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.95, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:40425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:40425/devtoo..., se:cdpVersion: 135.0.7049.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ea543374a7a983ed219470bc3d69111
+11:37:32.168 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:32.168 [Test worker] INFO  com.phonebook.utils.MyListener -- Object target ->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@78e22d35
+11:37:32.168 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:32.682 [Test worker] INFO  com.phonebook.utils.MyListener -- Test has a problem
+11:37:32.683 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:32.683 [Test worker] INFO  com.phonebook.utils.MyListener -- Method ->alert
+11:37:32.683 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:32.683 [Test worker] INFO  com.phonebook.utils.MyListener -- TargetException ->org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=135.0.7049.95)
+Build info: version: '4.30.0', revision: '509c7f17cc*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-24-generic', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9ea543374a7a983ed219470bc3d69111, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.95, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:40425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:40425/devtoo..., se:cdpVersion: 135.0.7049.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ea543374a7a983ed219470bc3d69111
+11:37:32.683 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:32.683 [Test worker] INFO  com.phonebook.utils.MyListener -- Object target ->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@2e8a1ab4
+11:37:32.683 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:33.196 [Test worker] INFO  com.phonebook.utils.MyListener -- Test has a problem
+11:37:33.197 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:33.197 [Test worker] INFO  com.phonebook.utils.MyListener -- Method ->alert
+11:37:33.197 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:33.197 [Test worker] INFO  com.phonebook.utils.MyListener -- TargetException ->org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=135.0.7049.95)
+Build info: version: '4.30.0', revision: '509c7f17cc*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-24-generic', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9ea543374a7a983ed219470bc3d69111, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.95, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:40425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:40425/devtoo..., se:cdpVersion: 135.0.7049.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ea543374a7a983ed219470bc3d69111
+11:37:33.197 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:33.197 [Test worker] INFO  com.phonebook.utils.MyListener -- Object target ->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@59f93db8
+11:37:33.197 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:33.712 [Test worker] INFO  com.phonebook.utils.MyListener -- Test has a problem
+11:37:33.712 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:33.712 [Test worker] INFO  com.phonebook.utils.MyListener -- Method ->alert
+11:37:33.712 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:33.713 [Test worker] INFO  com.phonebook.utils.MyListener -- TargetException ->org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=135.0.7049.95)
+Build info: version: '4.30.0', revision: '509c7f17cc*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-24-generic', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9ea543374a7a983ed219470bc3d69111, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.95, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:40425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:40425/devtoo..., se:cdpVersion: 135.0.7049.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ea543374a7a983ed219470bc3d69111
+11:37:33.713 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:33.713 [Test worker] INFO  com.phonebook.utils.MyListener -- Object target ->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@1aabf50d
+11:37:33.713 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:34.227 [Test worker] INFO  com.phonebook.utils.MyListener -- Test has a problem
+11:37:34.228 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:34.228 [Test worker] INFO  com.phonebook.utils.MyListener -- Method ->alert
+11:37:34.228 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:34.228 [Test worker] INFO  com.phonebook.utils.MyListener -- TargetException ->org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=135.0.7049.95)
+Build info: version: '4.30.0', revision: '509c7f17cc*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-24-generic', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9ea543374a7a983ed219470bc3d69111, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.95, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:40425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:40425/devtoo..., se:cdpVersion: 135.0.7049.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ea543374a7a983ed219470bc3d69111
+11:37:34.228 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:34.229 [Test worker] INFO  com.phonebook.utils.MyListener -- Object target ->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@73c9e8e8
+11:37:34.229 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:34.744 [Test worker] INFO  com.phonebook.utils.MyListener -- Test has a problem
+11:37:34.744 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:34.744 [Test worker] INFO  com.phonebook.utils.MyListener -- Method ->alert
+11:37:34.744 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:34.744 [Test worker] INFO  com.phonebook.utils.MyListener -- TargetException ->org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=135.0.7049.95)
+Build info: version: '4.30.0', revision: '509c7f17cc*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-24-generic', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9ea543374a7a983ed219470bc3d69111, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.95, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:40425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:40425/devtoo..., se:cdpVersion: 135.0.7049.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ea543374a7a983ed219470bc3d69111
+11:37:34.744 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:34.744 [Test worker] INFO  com.phonebook.utils.MyListener -- Object target ->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@de8039f
+11:37:34.744 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:35.258 [Test worker] INFO  com.phonebook.utils.MyListener -- Test has a problem
+11:37:35.259 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:35.259 [Test worker] INFO  com.phonebook.utils.MyListener -- Method ->alert
+11:37:35.259 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:35.259 [Test worker] INFO  com.phonebook.utils.MyListener -- TargetException ->org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=135.0.7049.95)
+Build info: version: '4.30.0', revision: '509c7f17cc*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-24-generic', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9ea543374a7a983ed219470bc3d69111, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.95, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:40425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:40425/devtoo..., se:cdpVersion: 135.0.7049.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ea543374a7a983ed219470bc3d69111
+11:37:35.259 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:35.259 [Test worker] INFO  com.phonebook.utils.MyListener -- Object target ->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@1deceb67
+11:37:35.259 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:35.772 [Test worker] INFO  com.phonebook.utils.MyListener -- Test has a problem
+11:37:35.773 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:35.773 [Test worker] INFO  com.phonebook.utils.MyListener -- Method ->alert
+11:37:35.773 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:35.773 [Test worker] INFO  com.phonebook.utils.MyListener -- TargetException ->org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=135.0.7049.95)
+Build info: version: '4.30.0', revision: '509c7f17cc*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-24-generic', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9ea543374a7a983ed219470bc3d69111, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.95, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:40425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:40425/devtoo..., se:cdpVersion: 135.0.7049.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ea543374a7a983ed219470bc3d69111
+11:37:35.773 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:35.773 [Test worker] INFO  com.phonebook.utils.MyListener -- Object target ->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@582a764a
+11:37:35.773 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:36.289 [Test worker] INFO  com.phonebook.utils.MyListener -- Test has a problem
+11:37:36.290 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:36.290 [Test worker] INFO  com.phonebook.utils.MyListener -- Method ->alert
+11:37:36.290 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:36.290 [Test worker] INFO  com.phonebook.utils.MyListener -- TargetException ->org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=135.0.7049.95)
+Build info: version: '4.30.0', revision: '509c7f17cc*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-24-generic', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9ea543374a7a983ed219470bc3d69111, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.95, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:40425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:40425/devtoo..., se:cdpVersion: 135.0.7049.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ea543374a7a983ed219470bc3d69111
+11:37:36.290 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:36.290 [Test worker] INFO  com.phonebook.utils.MyListener -- Object target ->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@64984b0f
+11:37:36.290 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:36.804 [Test worker] INFO  com.phonebook.utils.MyListener -- Test has a problem
+11:37:36.804 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:36.804 [Test worker] INFO  com.phonebook.utils.MyListener -- Method ->alert
+11:37:36.804 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:36.804 [Test worker] INFO  com.phonebook.utils.MyListener -- TargetException ->org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=135.0.7049.95)
+Build info: version: '4.30.0', revision: '509c7f17cc*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-24-generic', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9ea543374a7a983ed219470bc3d69111, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.95, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:40425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:40425/devtoo..., se:cdpVersion: 135.0.7049.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ea543374a7a983ed219470bc3d69111
+11:37:36.804 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:36.804 [Test worker] INFO  com.phonebook.utils.MyListener -- Object target ->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@292158f8
+11:37:36.804 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:37.318 [Test worker] INFO  com.phonebook.utils.MyListener -- Test has a problem
+11:37:37.319 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:37.319 [Test worker] INFO  com.phonebook.utils.MyListener -- Method ->alert
+11:37:37.319 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:37.319 [Test worker] INFO  com.phonebook.utils.MyListener -- TargetException ->org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=135.0.7049.95)
+Build info: version: '4.30.0', revision: '509c7f17cc*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-24-generic', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9ea543374a7a983ed219470bc3d69111, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.95, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:40425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:40425/devtoo..., se:cdpVersion: 135.0.7049.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ea543374a7a983ed219470bc3d69111
+11:37:37.319 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:37.319 [Test worker] INFO  com.phonebook.utils.MyListener -- Object target ->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@53ec2968
+11:37:37.319 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:37.834 [Test worker] INFO  com.phonebook.utils.MyListener -- Test has a problem
+11:37:37.835 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:37.835 [Test worker] INFO  com.phonebook.utils.MyListener -- Method ->alert
+11:37:37.835 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:37.835 [Test worker] INFO  com.phonebook.utils.MyListener -- TargetException ->org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=135.0.7049.95)
+Build info: version: '4.30.0', revision: '509c7f17cc*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-24-generic', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9ea543374a7a983ed219470bc3d69111, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.95, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:40425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:40425/devtoo..., se:cdpVersion: 135.0.7049.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ea543374a7a983ed219470bc3d69111
+11:37:37.835 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:37.835 [Test worker] INFO  com.phonebook.utils.MyListener -- Object target ->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@58ff8d79
+11:37:37.835 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:38.349 [Test worker] INFO  com.phonebook.utils.MyListener -- Test has a problem
+11:37:38.349 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:38.349 [Test worker] INFO  com.phonebook.utils.MyListener -- Method ->alert
+11:37:38.349 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:38.350 [Test worker] INFO  com.phonebook.utils.MyListener -- TargetException ->org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=135.0.7049.95)
+Build info: version: '4.30.0', revision: '509c7f17cc*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-24-generic', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9ea543374a7a983ed219470bc3d69111, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.95, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:40425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:40425/devtoo..., se:cdpVersion: 135.0.7049.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ea543374a7a983ed219470bc3d69111
+11:37:38.350 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:38.350 [Test worker] INFO  com.phonebook.utils.MyListener -- Object target ->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@7e19755a
+11:37:38.350 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:38.863 [Test worker] INFO  com.phonebook.utils.MyListener -- Test has a problem
+11:37:38.863 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:38.863 [Test worker] INFO  com.phonebook.utils.MyListener -- Method ->alert
+11:37:38.863 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:38.864 [Test worker] INFO  com.phonebook.utils.MyListener -- TargetException ->org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=135.0.7049.95)
+Build info: version: '4.30.0', revision: '509c7f17cc*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-24-generic', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9ea543374a7a983ed219470bc3d69111, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.95, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:40425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:40425/devtoo..., se:cdpVersion: 135.0.7049.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ea543374a7a983ed219470bc3d69111
+11:37:38.864 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:38.864 [Test worker] INFO  com.phonebook.utils.MyListener -- Object target ->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@5d5c04f9
+11:37:38.864 [Test worker] INFO  com.phonebook.utils.MyListener -- ==================================================================
+11:37:39.249 [Test worker] ERROR com.phonebook.tests.TestBase -- FAILEDloginNegativeWithoutEmailTestScreenshot path/home/kostiantyn/AIT-TR/PhonebookUI/screenshots/screen-1745833059235.png
+11:37:39.249 [Test worker] INFO  com.phonebook.tests.TestBase -- Stop test
+11:37:39.249 [Test worker] INFO  com.phonebook.tests.TestBase -- =========================================================================
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
